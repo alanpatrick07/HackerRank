@@ -7,7 +7,7 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
         Scanner in = new Scanner(System.in);
         int k = in.nextInt();
         for(int i=0; i<k; i++){
@@ -26,10 +26,9 @@ public class Solution {
             sum += arr[i];
         }
         
-        //curr is cimulated sum in the left
+        
         int curr = 0;
-        for(int j=0; j<arr.length; j++){
-            //left part equals right part
+        for(int j=0; j<arr.length; j++){ 
             if(curr == sum - arr[j]-curr){
                 return "YES";
             }
